@@ -77,14 +77,14 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
-  margin-bottom: 16px;
+  inline-size: 711px;
+  block-size: 386px;
+  margin-block-end: 16px;
 }
 
 .result__video {
-  height: 100%;
-  width: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
@@ -103,7 +103,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  margin-bottom: 6px;
+  margin-block-end: 6px;
 }
 
 .search-form__checkbox-list {
@@ -113,8 +113,9 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   width: fit-content;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -123,7 +124,7 @@ ol {
 }
 
 .search-form__textfield {
-  min-width: 225px;
+  min-inline-size: 225px;
   font-family: inherit;
   font-style: inherit;
   font-weight: inherit;
@@ -150,18 +151,18 @@ ol {
 .search-form__pseudo-checkbox {
   display: flex;
   border: 1px solid #fff;
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-inline-end: 5px;
 }
 
 .search-form__pseudo-checkbox::after {
   content: '';
   display: none;
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   background: #fff;
 }
 
@@ -179,7 +180,7 @@ ol {
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
-  height: 34px;
+  block-size: 34px;
   cursor: pointer
 }
 
@@ -201,7 +202,7 @@ ol {
 }
 
 .search-form__submit-button {
-  width: 194px;
+  inline-size: 194px;
   align-self: end;
 }
 
@@ -211,8 +212,8 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  height: 100%;
-  width: 100%;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .title {
@@ -230,9 +231,8 @@ ol {
 
 .content__list-container {
   position: relative;
-  height: 298px;
+  block-size: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__list {
@@ -279,7 +279,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  max-width: 196px;
+  max-inline-size: 196px;
 }
 
 .content__video-card-title {
@@ -292,7 +292,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin-bottom: 6px;
+  margin-block-end: 6px;
 }
 
 .content__video-card-description {
@@ -308,14 +308,14 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
-  margin-top: 30px;
-  width: 100%;
-  margin-bottom: 2px;
+  margin-block-start: 30px;
+  inline-size: 100%;
+  margin-block-end: 2px;
 }
