@@ -132,8 +132,8 @@ ol {
   line-height: 1.22;
   color: inherit;
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -150,7 +150,7 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: flex;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   inline-size: 19px;
   block-size: 19px;
   justify-content: center;
@@ -171,7 +171,7 @@ ol {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background-color: transparent;
   color: #fff;
   font-family: inherit;
